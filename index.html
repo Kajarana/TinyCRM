@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html> 
+ <head> 
+  <title> Índice </title> 
+<script src="js/jquery.js" type="text/javascript"> </script> 
+<script src="js/jquery.quicksearch.js" type="text/javascript"> </script> 
+<script src="js/jquery.tinysort.js" type="text/javascript"> </script> 
+<script  type="text/javascript"> 
+$(function() { 
+        $('#id_search_list').fastLiveFilter('#list_example'); 
+    }) 
+function sortList() 
+{ 
+	var mylist = $('#list_example'); 
+	var listitems = mylist.children('li').get(); 
+	listitems.sort(function(a, b) { 
+	   return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase()); 
+	}) 
+	$.each(listitems, function(idx, itm) { mylist.append(itm); }); 
+} 
+</script> 
+ </head> 
+ <body> 
+<h1>Índice</h1> 
+<form"> 
+	Busca:<input id="id_search_list" type="text"/> 	 <input type="button" value="ordenar" onclick="$('ul#list_example>li').tsort();"></input> 
+	<hr /> 
+	<h2>Lista de bichinhos: </h2> 
+	<ul id="list_example" > 
+		----		 
+	</ul> 
+</form> 
+ </body> 
+</html> 
