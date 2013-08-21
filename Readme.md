@@ -23,6 +23,7 @@ TinyCRM project tries to acomplish all these objectives.
   - Translate to other languages(only portuguese available)
   - Make the customization easier
   - Create Linux version of bat file.
+  - Create a sample version and improve the bat file and template to make it more easy to understand
   
 ##Notes:
   This is my first project on github. Any contribution/orientation/help would be greatly appreciated!
