@@ -10,11 +10,12 @@ Simple yet functional interface, for small business. Easy to install and operate
 TinyCRM project tries to acomplish all these objectives.
 
 Setup:
-Create a new folder in the hard disk and copy the three files:
-  - TinyCRM.bat
-  - index.html
-  - template.html
-Customize the TinyCRM.bat and template files to get the correct information needed on your CRM.
+  1 - Create a new folder in the hard disk and copy the three files:
+      * TinyCRM.bat
+      * index.html
+      * template.html
+  2 - Create a folder js and put a copy of jquery.js and jquery.tinysort.js
+  3 - Customize the TinyCRM.bat and template files to get the correct information needed on your CRM.
   
 Troubleshooting:
 
